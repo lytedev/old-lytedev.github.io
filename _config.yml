@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://lytedev.github.io" # the base hostname & protocol for your site
 twitter_username: lytedev
 github_username: lytedev
+permalink: /blog/:title
 
 # Build settings
 markdown: kramdown
