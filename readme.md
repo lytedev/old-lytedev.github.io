@@ -11,9 +11,11 @@ changes.
 ## Requirements
 
     gem install jekyll --pre
-    gem install rake redcarpet tempdir bundler
+    gem install rake bundler
+    bundle install
 
-Make sure your ruby gem binaries are in your PATH!
+Make sure your ruby gem binaries are in your PATH so you can run jekyll, rake,
+and bundle after you install them.
 
 ## Setup
 
