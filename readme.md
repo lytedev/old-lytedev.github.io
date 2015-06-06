@@ -10,9 +10,12 @@ changes.
 
 ## Requirements
 
-`gem install jekyll --pre`
+    gem install jekyll --pre
+    gem install rake redcarpet tempdir bundler
+
+Make sure your ruby gem binaries are in your PATH!
 
 ## Setup
 
-`jekyll serve`
+    rake watch
 
