@@ -1,0 +1,37 @@
+%footer.site-footer
+  .wrapper
+    %h2.footer-heading
+      = "{{ site.title }}"
+
+    .footer-col-wrapper
+      .footer-col.footer-col-1
+        %ul.contact-list
+          %li
+            = "{{ site.title }}"
+          %li
+            %a(href="mailto:{{ site.email }}")
+              = "{{ site.email }}"
+
+      .footer-col.footer-col-2
+        %ul.social-media-list
+          = "{% if site.github_username %}"
+          %li
+            %a(href="https://github.com/{{ site.github_username }}")
+              %span.icon.icon--github
+                = "icon"
+              %span.username
+                = "{{ site.github_username }}"
+          = "{% endif %}"
+          = "{% if site.twitter_username %}"
+          %li
+            %a(href="https://twitter.com/{{ site.twitter_username }}")
+              %span.icon.icon--twitter
+                = "icon"
+              %span.username
+                = "{{ site.twitter_username }}"
+          = "{% endif %}"
+
+      .footer-col.footer-col-3
+        %p.text
+          = "{{ site.description }}"
+

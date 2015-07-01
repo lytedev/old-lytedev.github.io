@@ -3,7 +3,8 @@
 ---
 @charset "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,400italic);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Lato:400,700);
 
 // Our variables
 $base-font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -13,19 +14,19 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #f8f8f8;
-$background-color: #111111;
-$brand-color:      #0066aa;
+$text-color:       #f5eeeb;
+$background-color: #3b3228;
+$brand-color:      #cb6077;
 
-$grey-color:       #aaaaaa;
+$grey-color:       #7e705a;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 30%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
 // Using media queries with like this:
-// @include media-query($palm) {
+// @include media-query($on-palm) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;
