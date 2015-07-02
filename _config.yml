@@ -1,12 +1,12 @@
 # Site settings
 title: lytedev
 email: daniel@lytedev.io
-description: >Hi, I'm Daniel! I write code and play with computers for a living.
+description: Hi, I'm Daniel! I write code and play with computers for a living.
 baseurl: ""
 url: "http://lytedev.github.io"
 twitter_username: lytedev
 github_username: lytedev
-permalink: /blog/:title
+permalink: /:title
 
 # Build settings
 markdown: kramdown
