@@ -5,7 +5,7 @@
 
   %title 
     = "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-  %meta(name="description" content="site.description")
+  %meta(name="description" content="{% if page.description %}{{ page.description | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}")
 
   %link(rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}")
   %link(rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}")

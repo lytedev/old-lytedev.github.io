@@ -1,9 +1,9 @@
 # Site settings
 title: lytedev
 email: daniel@lytedev.io
-description: > # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://lytedev.github.io" # the base hostname & protocol for your site
+description: >Hi, I'm Daniel! I write code and play with computers for a living.
+baseurl: ""
+url: "http://lytedev.github.io"
 twitter_username: lytedev
 github_username: lytedev
 permalink: /blog/:title

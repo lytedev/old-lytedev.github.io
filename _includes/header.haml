@@ -1,7 +1,9 @@
 %header.site-header
-  .wrapper
-    %a.site-title(href="{{ site.baseurl }}/")
-      = "{{ site.title }}"
+  %a.site-title(href="{{ site.baseurl }}/")
+    = "{{ site.title }}"
+
+  .site-description
+    = "{{ site.description }}"
 
   %nav.site-nav
     %a.menu-icon(href="#")
