@@ -83,7 +83,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -157,3 +156,9 @@ pre {
     }
 }
 
+/**
+ * Elements
+ */
+.site-title {
+  font-size: 48px;
+}

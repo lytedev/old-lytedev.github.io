@@ -10,8 +10,7 @@ changes.
 
 ## Requirements
 
-    gem install jekyll --pre
-    gem install rake bundler
+    gem install rake bundler jekyll
     bundle install
 
 Make sure your ruby gem binaries are in your PATH so you can run jekyll, rake,
