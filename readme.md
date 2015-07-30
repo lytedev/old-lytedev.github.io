@@ -10,7 +10,7 @@ changes.
 
 ## Requirements
 
-    gem install rake bundler jekyll
+    gem install rake bundler jekyll guard-livereload
     bundle install
 
 Make sure your ruby gem binaries are in your PATH so you can run jekyll, rake,
@@ -18,5 +18,11 @@ and bundle after you install them.
 
 ## Setup
 
+To automatically rebuild the site when changes are made,
+
     rake watch
+
+To enable the livereload server,
+
+    bundle exec guard
 
