@@ -84,6 +84,7 @@
 
 
 .page-content {
+  padding: 0 10px;
   z-index: 2;
 
   @include worst-res($is-palm) {

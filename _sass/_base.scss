@@ -177,3 +177,9 @@ pre {
 small {
   font-size: $small-font-size;
 }
+
+.mobile-hidden {
+  @include worst-res($is-palm) {
+    display: none;
+  }
+}
