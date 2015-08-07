@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+.home
+  %h1.page-tiTLE
+    = "Welcome!"
+
+  %h2.subhead 
+    = "Featured Projects"
+
+  .projects
+    %p 
+      = "Coming soon!"
+
+  %h2.subhead
+    = "Recent Posts"
+
+  .posts
+    = "{% if site.posts == empty %}"
+    No posts exist!
+    = "{% endif %}"
+    = "{% for post in site.posts %}"
+
+    %a.post-link(href="{{ post.url | prepend: site.baseurl }}")
+
+      %div(class="{% if post.image %}post-listing post-listing-image{% else %}post-listing{% endif %}")
+
+        %span.post-meta
+          = '{{ post.date | date: "%b %-d, %Y" }}'
+
+        .post-image-container
+          = "{% if post.image %}"
+          %img.post-image(src="{{ post.image }}")
+          = "{% endif %}"
+
+        %h3.post-title
+          = "{{ post.title }}"
+
+      .clearfix
+
+    = "{% endfor %}"
+
+    .cf
+

@@ -2,12 +2,12 @@
   %a.site-title(href="{{ site.baseurl }}/")
     = "{{ site.title }}"
 
-  .site-description
-    = "{{ site.description }}"
-
   %nav.site-nav
     %a.menu-icon(href="#")
-      = "menuicon"
+      %i.fa.fa-2x.fa-bars
+
+    .site-description
+      = "{{ site.description }}"
 
     .trigger
       = "{% for page in site.pages %}"

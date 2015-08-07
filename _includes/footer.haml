@@ -1,24 +1,39 @@
 %footer.site-footer
   .wrapper
-    %a(href="mailto:{{ site.email }}")
-      = "{{ site.email }}"
+    %hr
 
-    .footer-col.footer-col-2
-      %ul.social-media-list
-        = "{% if site.github_username %}"
-        %li
-          %a(href="https://github.com/{{ site.github_username }}")
-            %span.icon.icon--github
-              = "icon"
-            %span.username
-              = "{{ site.github_username }}"
-        = "{% endif %}"
-        = "{% if site.twitter_username %}"
-        %li
-          %a(href="https://twitter.com/{{ site.twitter_username }}")
-            %span.icon.icon--twitter
-              = "icon"
-            %span.username
-              = "{{ site.twitter_username }}"
-        = "{% endif %}"
+    .links
+      %a(href="mailto:{{ site.email }}")
+        %i.fa.fa-2x.fa-envelope-square
+
+      %a(href="https://github.com/{{ site.github_username }}")
+        %i.fa.fa-2x.fa-github-square
+
+      %a(href="https://twitter.com/{{ site.twitter_username }}")
+        %i.fa.fa-2x.fa-twitter-square
+
+    .desktop-links
+      %a(href="mailto:{{ site.email }}")
+        %i.fa.fa.fa-envelope-square
+        = "{{ site.email }}"
+
+      %a(href="https://github.com/{{ site.github_username }}")
+        %i.fa.fa.fa-github-square
+        = "{{ site.github_username }}"
+
+      %a(href="https://twitter.com/{{ site.twitter_username }}")
+        %i.fa.fa.fa-twitter-square
+        = "{{ site.twitter_username }}"
+
+    %small
+      %p
+        %a(href="/privacy")
+          = "Privacy"
+        %br
+        = "&copy; 2015"
+        = "All rights reserved"
+
+  %script(type="text/javascript" src="/scripts/main.js")
+  %script(type="text/javascript")
+    = "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-43157826-2', 'auto');ga('send', 'pageview');"
 

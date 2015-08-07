@@ -1,1 +1,205 @@
-// * { display: none; }
+#container {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.site-header {
+  text-align: center;
+
+  @include worst-res($is-palm) {
+    padding: 2em;
+    padding-bottom: 0;
+    text-align: left;
+    width: $sidebar-width;
+  }
+}
+
+.site-title {
+  text-align: left;
+  padding-left: 1rem;
+  display: block;
+  text-shadow: 0px 1px 1px #111;
+
+  @include worst-res($is-palm) {
+    padding-left: 0;
+  }
+}
+
+.menu-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-shadow: 0px 1px 1px #111;
+
+  &:hover {
+    color: $brand-color;
+  }
+
+  &:focus {
+    color: $text-color;
+  }
+
+  @include worst-res($is-palm) {
+    display: none;
+  }
+}
+
+.trigger {
+  overflow-y: hidden;
+  max-height: 0px;
+  transition: all 0.5s cubic-bezier(0, 1, 0.5, 1);
+
+  @include worst-res($is-palm) {
+    max-height: 10000px;
+  }
+}
+
+.site-description {
+  padding: 0.5em;
+
+  @include worst-res($is-palm) {
+    padding: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+.page-link {
+  display: block;
+
+  @include best-res($is-palm) {
+    padding: 0.25em;
+    background-color: lighten($background-color, 5%);
+    border-top: solid 1px lighten($background-color, 20%);
+    transition: color 0.2s, background-color 0.2s;
+
+    &:hover {
+      background-color: lighten($background-color, 15%);
+    }
+    & ~ .page-link {
+      border-bottom: solid 1px lighten($background-color, 20%);
+    }
+  }
+}
+
+
+.page-content {
+  z-index: 2;
+
+  @include worst-res($is-palm) {
+    margin-top: 80px;
+    position: absolute;
+    left: $sidebar-width + 60px;
+    top: 0;
+    right: 20px;
+  }
+}
+
+.posts, .projects {
+  padding: 0 10px;
+
+  @include worst-res($is-palm) {
+    padding: 0;
+  }
+
+  @include worst-res($is-laptop) {
+    .post-link:nth-child(2n-1) {
+      margin-right: 2%;
+    }
+  }
+}
+
+.post-link, .project-link {
+  display: block;
+  margin-bottom: 10px;
+
+  @include worst-res($is-laptop) {
+    float: left;
+    width: 49%;
+  }
+
+  &:hover {
+    .post-listing .post-title, .project-listing .project-title {
+      color: $brand-color;
+    }
+  }
+}
+
+.post-listing, .project-listing {
+  display: block;
+  max-height: 500px;
+  overflow-y: hidden;
+  position: relative;
+  background-color: lighten($background-color, 5%);
+  border: solid 1px lighten($background-color, 20%);
+
+  .post-title, .project-title {
+    transition: 0.2s color;
+    float: left;
+    color: $text-color;
+    margin: 0;
+    padding: 5px 10px;
+  }
+
+  .post-meta, .project-meta {
+    position: absolute;
+    // top: 64px;
+    top: 0;
+    right: 0;
+    font-size: $small-font-size;
+    color: $text-color;
+    padding: 10px;
+    text-shadow: 0px 1px 2px #000;
+  }
+}
+
+.post-image-container, .project-image-container {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.post-image, .project-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.page-title, .subhead {
+  text-align: center;
+
+  @include worst-res($is-palm) {
+    text-align: left;
+  }
+}
+
+.site-footer {
+  text-align: center;
+  padding-bottom: 20px;
+
+  @include worst-res($is-palm) {
+    padding: 2em;
+    padding-top: 0;
+    text-align: left;
+    width: $sidebar-width;
+  }
+}
+
+.links a {
+  margin: 5px;
+
+  @include worst-res($is-palm) {
+    display: none;
+  }
+}
+
+.desktop-links {
+  display: none;
+  margin-bottom: 1em;
+
+  a { display: block }
+
+  @include worst-res($is-palm) {
+    display: block;
+  }
+}

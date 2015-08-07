@@ -3,11 +3,14 @@
   = "{% haml head.haml %}"
 
   %body
-    = "{% haml header.haml %}"
+    #container
+      = "{% haml header.haml %}"
 
-    .page-content
-      .wrapper
-        = "{{ content }}"
+      .page-content
+        .wrapper
+          = "{{ content }}"
 
-    = "{% haml footer.haml %}"
+      = "{% haml footer.haml %}"
+
+      .cf
 

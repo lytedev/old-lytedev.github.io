@@ -6,6 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /**
@@ -19,6 +20,12 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+}
+
+hr {
+  border: 0;
+  border-bottom: solid 2px lighten($background-color, 20%);
+  margin: 1em 0;
 }
 
 /**
@@ -68,6 +75,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 }
 
 /**
@@ -76,17 +84,16 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: $brand-color;
     text-decoration: none;
+    transition: color 0.2s;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+    // &:visited {
+    //     color: darken($brand-color, 15%);
+    // }
 
     &:hover {
         color: $text-color;
     }
 }
-
-
 
 /**
  * Blockquotes
@@ -140,6 +147,10 @@ pre {
     }
 }
 
+.cf {
+  @extend %clearfix;
+}
+
 /**
  * Icons
  */
@@ -161,4 +172,8 @@ pre {
  */
 .site-title {
   font-size: 48px;
+}
+
+small {
+  font-size: $small-font-size;
 }
