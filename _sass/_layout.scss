@@ -97,7 +97,6 @@
 }
 
 .posts, .projects {
-  padding: 0 10px;
 
   @include worst-res($is-palm) {
     padding: 0;
@@ -166,7 +165,7 @@
   overflow-y: hidden;
 }
 
-.page-title, .subhead {
+.page-title, .subhead, .post-title, .post-meta {
   text-align: center;
 
   @include worst-res($is-palm) {

@@ -6,21 +6,48 @@ layout: default
   %h1.page-title
     = "Welcome!"
 
-  %h2.subhead 
+  -# Projects
+  %h2.subhead
     = "Featured Projects"
 
   .projects
-    %p 
-      = "Coming soon!"
+    = "{% assign projecttag = 'project' %}"
+    = "{% for post in site.posts %}"
+    = "{% if post.tags contains projecttag %}"
 
+    %a.post-link(href="{{ post.url | prepend: site.baseurl }}")
+
+      %div(class="{% if post.image %}post-listing post-listing-image{% else %}post-listing{% endif %}")
+
+        %span.post-meta
+          = '{% if post.langwork %}{{ post.langwork }}{% endif %}'
+          = '{% if post.langwork and post.version %}/{% endif %}'
+          = '{% if post.version %}{{ post.version }}{% endif %}'
+
+        .post-image-container
+          = "{% if post.image %}"
+          %img.post-image(src="{{ post.image }}")
+          = "{% endif %}"
+
+        %h3.post-title
+          = "{{ post.title }}"
+
+      .clearfix
+
+    = "{% endif %}"
+    = "{% endfor %}"
+
+  .cf
+  %br
+
+  -# Blogroll
   %h2.subhead
     = "Recent Posts"
 
   .posts
-    = "{% if site.posts == empty %}"
-    No posts exist!
-    = "{% endif %}"
+    = "{% assign blogtag = 'blog' %}"
     = "{% for post in site.posts %}"
+    = "{% if post.tags contains blogtag %}"
 
     %a.post-link(href="{{ post.url | prepend: site.baseurl }}")
 
@@ -39,6 +66,7 @@ layout: default
 
       .clearfix
 
+    = "{% endif %}"
     = "{% endfor %}"
 
     .cf
