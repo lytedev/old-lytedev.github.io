@@ -26,9 +26,3 @@ To enable the livereload server,
 
     bundle exec guard
 
-## Publish
-
-The site can be published with a rake command.
-
-    rake publish
-
