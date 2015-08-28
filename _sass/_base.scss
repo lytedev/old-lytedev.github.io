@@ -116,13 +116,15 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: 12px;
+    line-height: 1.5em;
     border-radius: 3px;
     background-color: $grey-color-dark;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 3px 3px;
+    padding-bottom: 1px;
 }
 
 pre {

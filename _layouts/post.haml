@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
+
 .post
   %h1.post-title
     = "{{ page.title }}"
   %p.post-meta
     = "{{ page.date | date: '%b %-d, %Y' }}"
+    .post-image
+      %a(href="{{ page.image }}")
+        %img(src="{{ page.image }}")
 
   %article.post-content
     = "{{ content }}"
