@@ -1,0 +1,28 @@
+title: Contact
+---
+
+%p
+  If you're looking for a software engineer or web developer and haven't been
+  convinced I'm worth contacting, you can find my resume here and my portfolio of
+  public projects on my GitHub profile. Someday, I'll hopefully compile a list of
+  all the non-public projects I've had a hand in.
+
+%p
+  I'm always on the lookout for cool opportunities. If you think you've got one,
+  feel free to at least shoot me an email! If you'd like, here are some links to
+  some of my stuff.
+
+%ul
+  %li
+    %a{href: "https://github.com/lytedev"}
+      %i.fa.fa-github-square 
+      github@lytedev
+  %li
+    %a{href: "https://twitter.com/lytedev"}
+      %i.fa.fa-twitter-square 
+      twitter@lytedev
+  %li
+    %a{href: "mailto://daniel@lytedev.io"}
+      %i.fa.fa-envelope-square
+      daniel@lytedev
+
