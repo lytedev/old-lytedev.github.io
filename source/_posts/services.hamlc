@@ -1,28 +1,37 @@
 title: Contact
+date: 2015-09-17 01:00:00
 ---
 
 %p
   If you're looking for a software engineer or web developer and haven't been
-  convinced I'm worth contacting, you can find my resume here and my portfolio of
-  public projects on my GitHub profile. Someday, I'll hopefully compile a list of
+  convinced I'm worth contacting, you can
+  %a.underline{href: "https://docs.google.com/document/d/1fPVh7DGWDL7TxYdE9Rz5iNSZQrAhlxdFaCuONYgcs64/edit?usp=sharing"} find my resume here
+  and
+  %a.underline{href: "https://github.com/lytedev"} my portfolio of public projects on my GitHub profile.
+  Someday, I'll hopefully compile a list of
   all the non-public projects I've had a hand in.
 
 %p
   I'm always on the lookout for cool opportunities. If you think you've got one,
-  feel free to at least shoot me an email! If you'd like, here are some links to
-  some of my stuff.
+  feel free to at least shoot me an email - 
+  %em especially
+  if you're a business or organization here in Kansas City looking to have website or software work done! If you'd like, here are some links to some of my stuff.
 
 %ul
   %li
     %a{href: "https://github.com/lytedev"}
-      %i.fa.fa-github-square 
-      github@lytedev
+      %i.fa.fa-github
+      %span.underline @lytedev on GitHub
   %li
     %a{href: "https://twitter.com/lytedev"}
-      %i.fa.fa-twitter-square 
-      twitter@lytedev
+      %i.fa.fa-twitter
+      %span.underline @lytedev on Twitter
+  %li
+    %a{href: "https://telegram.me/lytedev"}
+      %i.fa.fa-paper-plane
+      %span.underline @lytedev on Telegram
   %li
     %a{href: "mailto://daniel@lytedev.io"}
-      %i.fa.fa-envelope-square
-      daniel@lytedev
+      %i.fa.fa-envelope
+      %span.underline Email daniel@lytedev.io
 
